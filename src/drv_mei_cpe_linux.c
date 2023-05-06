@@ -1863,7 +1863,7 @@ static int mei_seq_single_show(struct seq_file *s, void *v)
 
 static int mei_proc_single_open(struct inode *inode, struct file *file)
 {
-   return single_open(file, mei_seq_single_show, PDE_DATA(inode));
+   return single_open(file, mei_seq_single_show, pde_data(inode));
 }
 
 static void mei_proc_entry_create(struct proc_dir_entry *parent_node,
